@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Naresh Saini Dairy & Sweets, Narnaul</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Mukta:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffffff;--alt:#fff6dc;--card:#ffffff;--ink:#2a1210;--muted:#6f5650;--line:#f0dca8;--red:#b3122b;--yellow:#ffc21a;--on-red:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#160a0b;--alt:#211012;--card:#2a1517;--ink:#f8ead2;--muted:#c9ae93;--line:#4a2a25}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#160a0b;--alt:#211012;--card:#2a1517;--ink:#f8ead2;--muted:#c9ae93;--line:#4a2a25}
+*{box-sizing:border-box;margin:0}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px);scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Mukta",system-ui,sans-serif;line-height:1.6;font-size:1.05rem;padding-bottom:84px}
+h1,h2,h3{font-family:"Rozha One",Georgia,serif;font-weight:400;line-height:1.12}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.bar{background:var(--yellow);color:#2a1210;text-align:center;font-weight:700;font-size:.95rem;padding:8px 12px}
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--red);color:var(--on-red)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--red);z-index:10}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;height:62px}
+.logo{font-family:"Rozha One",serif;font-size:1.25rem;text-decoration:none}
+.nav nav{display:none;gap:22px;font-weight:600}
+.nav nav a{text-decoration:none}
+@media(min-width:800px){.nav nav{display:flex}}
+.btn{display:inline-block;padding:13px 26px;border-radius:999px;font-weight:700;text-decoration:none;background:var(--red);color:var(--on-red);border:2px solid var(--red)}
+.btn.y{background:var(--yellow);color:#2a1210;border-color:var(--yellow)}
+.btn.o{background:transparent;color:inherit;border-color:currentColor}
+.btn.s{padding:9px 20px}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+.hero{background:var(--red);color:#fff;position:relative;overflow:hidden}
+.hero .wrap{display:grid;gap:26px;padding-top:44px;padding-bottom:54px;align-items:center}
+@media(min-width:800px){.hero .wrap{grid-template-columns:1.1fr .9fr;padding-top:72px;padding-bottom:84px}}
+.hero h1{font-size:clamp(2.3rem,7.5vw,4.2rem)}
+.hero p{margin:14px 0 24px;font-size:1.2rem;max-width:28em;color:#ffe4e0}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.plate{position:relative;aspect-ratio:1;max-width:420px;width:100%;margin:0 auto;border-radius:50%;background:var(--yellow);box-shadow:0 0 0 12px rgba(255,194,26,.25),0 0 0 26px rgba(255,194,26,.12)}
+.plate svg{position:absolute}
+.p1{width:62%;left:19%;top:34%}
+.p2{width:30%;left:6%;top:12%}
+.p3{width:22%;right:8%;top:8%}
+.p4{width:34%;right:6%;bottom:8%}
+.pattern{height:16px;background:linear-gradient(135deg,var(--yellow) 25%,transparent 25%) -8px 0,linear-gradient(225deg,var(--yellow) 25%,transparent 25%) -8px 0,linear-gradient(315deg,var(--yellow) 25%,transparent 25%),linear-gradient(45deg,var(--yellow) 25%,transparent 25%);background-size:16px 16px;background-color:var(--red)}
+.trust{background:var(--alt);border-bottom:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding-top:16px;padding-bottom:16px;text-align:center;font-weight:700}
+@media(min-width:800px){.trust .wrap{grid-template-columns:repeat(4,1fr)}}
+.trust span{color:var(--red)}
+@media (prefers-color-scheme:dark){.trust span{color:var(--yellow)}}
+section{padding:54px 0 6px}
+h2{font-size:clamp(1.8rem,5vw,2.6rem);text-align:center;margin-bottom:8px}
+.sub{text-align:center;color:var(--muted);margin-bottom:28px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:800px){.grid{grid-template-columns:repeat(4,1fr)}}
+.tile{border-radius:20px;padding:18px 12px 16px;text-align:center;text-decoration:none;color:#2a1210}
+.tile svg{height:96px;width:auto;display:block;margin:0 auto 10px}
+.tile b{font-family:"Rozha One",serif;font-weight:400;font-size:1.2rem}
+.t1{background:#ffd75e}.t2{background:#ffb3a8}.t3{background:#cfe8ff}.t4{background:#c9e9b8}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;text-align:center}
+.card .img{background:var(--alt);padding:18px 0 8px}
+.card .img svg{height:110px;width:auto;display:block;margin:0 auto}
+.card .body{padding:14px 14px 18px}
+.card h3{font-size:1.25rem;margin-bottom:4px}
+.card small{display:block;color:var(--muted);margin-bottom:12px}
+.promise{display:grid;gap:16px;margin-top:6px}
+@media(min-width:800px){.promise{grid-template-columns:repeat(3,1fr)}}
+.promise div{border-left:5px solid var(--yellow);background:var(--alt);padding:16px 18px;border-radius:0 14px 14px 0}
+.promise b{display:block;font-family:"Rozha One",serif;font-weight:400;font-size:1.2rem}
+.steps{list-style:none;padding:0;display:grid;gap:12px;counter-reset:s;max-width:640px;margin:0 auto}
+.steps li{counter-increment:s;display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.steps li::before{content:counter(s);flex:none;width:38px;height:38px;border-radius:50%;background:var(--red);color:#fff;font-family:"Rozha One",serif;display:grid;place-items:center}
+.visit{background:var(--alt);border:1px solid var(--line);border-radius:20px;padding:24px;display:grid;gap:8px;max-width:640px;margin:0 auto}
+footer.site{margin-top:54px;background:var(--red);color:#ffe4e0;padding:24px 0;text-align:center;font-size:.92rem}
+.sticky{position:fixed;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--line);display:flex;gap:10px;z-index:8}
+.sticky .btn{flex:1;text-align:center;padding:12px}
+.sticky .wa{background:#1fa855;border-color:#1fa855;color:#fff}
+@media(min-width:900px){.sticky{display:none}body{padding-bottom:0}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="bottle" viewBox="0 0 100 200"><rect x="37" y="4" width="26" height="16" rx="4" fill="#e9b44c"/><path d="M40 20h20v24c0 10 24 20 24 50v92c0 8-6 14-14 14H30c-8 0-14-6-14-14V94c0-30 24-40 24-50z" fill="#f6efe2" stroke="#d9c9a8" stroke-width="2"/><rect x="26" y="112" width="48" height="52" rx="8" fill="#b3122b"/><circle cx="50" cy="138" r="12" fill="#ffc21a"/></symbol>
+  <symbol id="pak" viewBox="0 0 160 120"><path d="M8 62h144c0 34-30 54-72 54S8 96 8 62z" fill="#b8862b"/><ellipse cx="80" cy="62" rx="72" ry="12" fill="#e9b44c"/><path d="M24 60c4-32 30-46 56-46s52 14 56 46z" fill="#e8731c"/><g fill="#f7a85a"><circle cx="50" cy="44" r="4"/><circle cx="82" cy="32" r="4"/><circle cx="112" cy="46" r="4"/><circle cx="68" cy="52" r="3"/><circle cx="98" cy="54" r="3"/><circle cx="38" cy="54" r="3"/></g><g fill="#86b350"><rect x="58" y="24" width="12" height="4" rx="2" transform="rotate(-20 64 26)"/><rect x="92" y="26" width="12" height="4" rx="2" transform="rotate(25 98 28)"/><rect x="74" y="42" width="12" height="4" rx="2"/></g></symbol>
+  <symbol id="barfi" viewBox="0 0 170 110"><path d="M6 78l42-24 42 24-42 24z" fill="#f2e4c2"/><path d="M6 78v10l42 24v-10z" fill="#cdb27a"/><path d="M48 102v10l42-24V78z" fill="#b99a5e"/><circle cx="48" cy="78" r="5" fill="#86b350"/><path d="M70 48l42-24 42 24-42 24z" fill="#f6ecd0"/><path d="M70 48v10l42 24V72z" fill="#d8bd86"/><path d="M112 72v10l42-24V48z" fill="#c1a367"/><circle cx="112" cy="48" r="5" fill="#86b350"/><path d="M100 48l12-7 12 7-12 7z" fill="#e9b44c"/></symbol>
+  <symbol id="kulhad" viewBox="0 0 120 130"><path d="M14 28h92l-14 90c-1 6-6 10-12 10H40c-6 0-11-4-12-10z" fill="#b5532b"/><ellipse cx="60" cy="28" rx="46" ry="10" fill="#8e3d1d"/><ellipse cx="60" cy="29" rx="40" ry="7" fill="#f6efe2"/><path d="M34 52c20 6 32 6 52 0" stroke="#8e3d1d" stroke-width="3" fill="none" opacity=".5"/></symbol>
+</svg>
+
+<div class="bar">Place your festive and occasion orders on WhatsApp</div>
+<header class="nav"><div class="wrap">
+  <a class="logo" href="#top">Naresh Saini Dairy & Sweets</a>
+  <nav><a href="#shop">Shop</a><a href="#best">Bestsellers</a><a href="#order">How to order</a><a href="#visit">Visit</a></nav>
+  <a class="btn y s" href="https://wa.me/919350916869" target="_blank" rel="noopener">WhatsApp</a>
+</div></header>
+
+<section class="hero" id="top" style="padding:0">
+  <div class="wrap">
+    <div>
+      <h1>Fresh sweets and dairy, made in Narnaul</h1>
+      <p>From our own dairy farm and kitchen to your festival table. Made fresh, made to order.</p>
+      <div class="btns">
+        <a class="btn y" href="https://wa.me/919350916869?text=Hi%2C%20I%E2%80%99d%20like%20to%20place%20an%20order" target="_blank" rel="noopener">Order on WhatsApp</a>
+        <a class="btn o" href="tel:+919350916869">Call us</a>
+      </div>
+    </div>
+    <div class="plate" aria-hidden="true">
+      <svg class="p1" viewBox="0 0 160 120"><use href="#pak"/></svg>
+      <svg class="p2" viewBox="0 0 100 200"><use href="#bottle"/></svg>
+      <svg class="p3" viewBox="0 0 120 130"><use href="#kulhad"/></svg>
+      <svg class="p4" viewBox="0 0 170 110"><use href="#barfi"/></svg>
+    </div>
+  </div>
+  <div class="pattern"></div>
+</section>
+
+<div class="trust"><div class="wrap">
+  <div><span>4.9★</span> Google rating</div>
+  <div><span>428</span> customer reviews</div>
+  <div><span>Fresh</span> made to order</div>
+  <div><span>Own</span> dairy farm</div>
+</div></div>
+
+<main class="wrap">
+  <section id="shop">
+    <h2>Shop by category</h2>
+    <p class="sub">Tap any category to ask for today’s rates.</p>
+    <div class="grid">
+      <a class="tile t1" href="https://wa.me/919350916869?text=Hi%2C%20I%20want%20to%20order%20Gajar%20Pak" target="_blank" rel="noopener"><svg viewBox="0 0 160 120"><use href="#pak"/></svg><b>Gajar Pak</b></a>
+      <a class="tile t2" href="https://wa.me/919350916869?text=Hi%2C%20I%20want%20to%20order%20sweets" target="_blank" rel="noopener"><svg viewBox="0 0 170 110"><use href="#barfi"/></svg><b>Sweets</b></a>
+      <a class="tile t3" href="https://wa.me/919350916869?text=Hi%2C%20I%20want%20to%20order%20dairy%20products" target="_blank" rel="noopener"><svg viewBox="0 0 100 200"><use href="#bottle"/></svg><b>Fresh Dairy</b></a>
+      <a class="tile t4" href="https://wa.me/919350916869?text=Hi%2C%20I%20have%20a%20bulk%20or%20occasion%20order" target="_blank" rel="noopener"><svg viewBox="0 0 120 130"><use href="#kulhad"/></svg><b>Occasion Orders</b></a>
+    </div>
+  </section>
+
+  <section id="best">
+    <h2>Customer favourites</h2>
+    <p class="sub">Prices change with weight and season, so we share them on WhatsApp.</p>
+    <div class="grid">
+      <div class="card"><div class="img"><svg viewBox="0 0 160 120"><use href="#pak"/></svg></div><div class="body"><h3>Gajar Pak</h3><small>Prepared fresh on order</small><a class="btn s" href="https://wa.me/919350916869?text=Hi%2C%20price%20of%20Gajar%20Pak%20please" target="_blank" rel="noopener">Ask price</a></div></div>
+      <div class="card"><div class="img"><svg viewBox="0 0 170 110"><use href="#barfi"/></svg></div><div class="body"><h3>Barfi</h3><small>Loose or boxed</small><a class="btn s" href="https://wa.me/919350916869?text=Hi%2C%20price%20of%20Barfi%20please" target="_blank" rel="noopener">Ask price</a></div></div>
+      <div class="card"><div class="img"><svg viewBox="0 0 100 200"><use href="#bottle"/></svg></div><div class="body"><h3>Fresh Milk</h3><small>From our farm</small><a class="btn s" href="https://wa.me/919350916869?text=Hi%2C%20milk%20rate%20please" target="_blank" rel="noopener">Ask price</a></div></div>
+      <div class="card"><div class="img"><svg viewBox="0 0 120 130"><use href="#kulhad"/></svg></div><div class="body"><h3>Kulhad Milk</h3><small>Served in clay kulhad</small><a class="btn s" href="https://wa.me/919350916869?text=Hi%2C%20kulhad%20milk%20details%20please" target="_blank" rel="noopener">Ask details</a></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Our promise</h2>
+    <p class="sub">What customers tell us they value most.</p>
+    <div class="promise">
+      <div><b>Fresh and clean</b>Made with care in a hygienic kitchen.</div>
+      <div><b>Made to order</b>Your order is prepared for you, not pulled from old stock.</div>
+      <div><b>On-time delivery</b>Delivery on request, including other cities.</div>
+    </div>
+  </section>
+
+  <section id="order">
+    <h2>How to order</h2>
+    <p class="sub">Three simple steps.</p>
+    <ol class="steps">
+      <li>Send us a message on WhatsApp.</li>
+      <li>Tell us what you need, how much, and where to deliver.</li>
+      <li>Once the price is confirmed, your order is prepared and sent.</li>
+    </ol>
+  </section>
+
+  <section id="visit">
+    <h2>Visit our shop</h2>
+    <p class="sub">Open every day.</p>
+    <div class="visit">
+      <p><b>Address:</b> Indira Colony, near Hanuman Mandir, Koliyan, Seka, Narnaul, Haryana 123001</p>
+      <p><b>Hours:</b> Daily, 6 am to 11 pm (opens at 7 am on Fridays)</p>
+      <p><b>Phone:</b> <a href="tel:+919350916869">+91 93509 16869</a></p>
+      <p><a class="btn" href="https://maps.google.com/?q=Naresh+Saini+Dairy+%26+Sweets+Narnaul" target="_blank" rel="noopener">Get directions</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site">Sample website design. Final details and photos will be added with the owner’s approval.</footer>
+
+<nav class="sticky" aria-label="Quick contact">
+  <a class="btn wa" href="https://wa.me/919350916869" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="btn" href="tel:+919350916869">Call</a>
+</nav>
+</body>
+</html>
